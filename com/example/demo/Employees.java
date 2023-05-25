@@ -14,7 +14,7 @@ public class Employees{
         return employeeList;
     }
 
-    public void setEmployeeList(List<Eployee> employeeList){
+    public void setEmployeeList(List<Employee> employeeList){
         this.employeeList = employeeList;
     }
 }
