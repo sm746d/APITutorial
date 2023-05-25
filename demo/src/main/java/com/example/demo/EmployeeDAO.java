@@ -9,7 +9,7 @@ import com.example.demo.Employees;
 @Repository
 
 public class EmployeeDAO{
-    private static Employee list = new Employees();
+    private static Employees list = new Employees();
 
     static{
         list.getEmployeeList().add(
@@ -25,8 +25,8 @@ public class EmployeeDAO{
                 "Sam",
                 "Emanual",
                 "sam.emanual@gmail.com"
-            );
-        )
+            )
+        );
 
         list.getEmployeeList().add(
             new Employee(3,
@@ -35,6 +35,7 @@ public class EmployeeDAO{
                 "ethan.hunt@hotmail.com"
             )
         );
+    }
 
         public Employees getAllEmployees(){
             return list;
@@ -43,5 +44,4 @@ public class EmployeeDAO{
         public void addEmployee(Employee employee){
             list.getEmployeeList().add(employee);
         }
-    }
 }

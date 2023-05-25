@@ -27,8 +27,8 @@ public class EmployeeController{
     path="/",
     produces="application/json")
 
-    public Employee getEmployees(){
-        return EmployeeDAO.getAllEmployees();
+    public Employees getEmployees(){
+        return employeeDAO.getAllEmployees();
     }
 
     @PostMapping(
